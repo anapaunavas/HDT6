@@ -9,6 +9,12 @@ import java.util.regex.Pattern;
 
 public class FileReader {
 
+    /**
+     * It reads a file and returns an array with the data of the file
+     * 
+     * @param file_name The name of the file to be read.
+     * @return The method returns an array of strings.
+     */
     public String[] read_file(String file_name) {
         ArrayList<String> data = new ArrayList<String>();
         String[] products;
@@ -39,6 +45,11 @@ public class FileReader {
     	return products;
     }
 
+    /**
+     * It creates a new file in the folder "Archivos" with the name of the file_name parameter
+     * 
+     * @param file_name The name of the file to create.
+     */
     public void new_file(String file_name) {
         File File;
         try {
