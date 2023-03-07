@@ -1,10 +1,8 @@
 //@author Ana Paula Hong 22731
 
 import java.io.IOException;
-import java.util.Map.Entry;
 import java.util.HashMap;
 import java.util.Map;
-import javax.swing.JOptionPane; 
 import java.util.ArrayList;
 
 /**
