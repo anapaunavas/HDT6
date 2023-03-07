@@ -53,7 +53,12 @@ public class Main {
 				// Mostrar la categoria del producto.
 				searchCategory(Products);
 				break;
+
+            case 3:
+                
             }
+
+            
 }}
 
     private static void searchCategory(Map<String, HashMap<String, Integer>> products) {
