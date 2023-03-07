@@ -28,4 +28,29 @@ public class Interaction {
 		}
 		return options.length;
 	}
+
+    public int Selection(String option) {
+		boolean next_step = false;
+		int selection = 0, value = 0;
+		do {
+			if(option.equals("Hash")) {
+				value = Options();
+			}else if(option.equals("Operations")) {
+				value = Operations();
+			}else if(option.equals("Answer")) {
+				value = answer();
+			}
+			try {
+				selection = Integer.parseInt(JOptionPane.showInputDialog("Ingrese una de las opciones: "));
+				if(selection < 0 || selection > value) {
+					System.err.println("Ingrese una opcion valida :( )");
+				}else {
+					next_step = true;
+				}
+			}catch(NumberFormatException e){
+				System.err.println("Ingrese un valor numerico :( )");
+			}
+		}while(!next_step);
+		return selection;
+	}
 }
