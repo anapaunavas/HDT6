@@ -37,4 +37,14 @@ public class Main {
 				break;
             }
 }}
+
+    private static void searchCategory(Map<String, HashMap<String, Integer>> products) {
+    }
+
+    private static void addNewProduct(Map<String, HashMap<String, Integer>> products, Interaction view) {
+    }
+
+    private static Map<String, HashMap<String, Integer>> refixData(String[] values) {
+        return null;
+    }
     }
