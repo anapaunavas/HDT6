@@ -38,7 +38,8 @@ public class FileReader {
             System.out.println("Recordatorio: agregue el archivo a la carpeta de archivos");
         }
     	
-    	products = new String[data.size()];	
+    	// Creating a new array of strings with the size of the arraylist.
+        products = new String[data.size()];	
     	for(int i = 0; i < products.length; i++) {
     		products[i] = data.get(i);
     	}
