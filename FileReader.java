@@ -46,12 +46,12 @@ public class FileReader {
             File = new File("Archivos\\" + file_name + ".txt");
             // Verificar si existe
             if (File.exists()) {
-                System.out.println("el arhcivo ya existe");
+                System.out.println("El archivo ya existe");
             } else if (File.createNewFile()) {// crear en caso de no existir
-                System.out.println("Se ha creado el archivo");
+                System.out.println("Se ha creado el archivo exitosamente");
             }
         } catch (IOException exception) {// Throwable, excepcion padre (general) de todas las excepciones.
-            System.err.println("No se ha creado el archivo");
+            System.err.println("No se ha creado el archivo :( )");
         }
     }
 }
