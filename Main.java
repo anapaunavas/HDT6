@@ -45,7 +45,7 @@ public class Main {
 			selection = view.Selection("Operations");
 			switch(selection) {
 			case 1:
-				// Agregar un producto a la colecci�n
+				// Agregar un producto a la coleccion
 				addNewProduct(Products, view);
 				break;
 				
