@@ -1,3 +1,5 @@
+//@author Ana Paula Hong 22731
+
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -15,15 +17,18 @@ public class FactoryConection <K,V>{
 		switch(value){
 			case 1:
 				// HashMap
-				typeMap = new HashMap<K, V>();
+				// Creating a new HashMap object and assigning it to the variable typeMap.
+                typeMap = new HashMap<K, V>();
 				break;
 			case 2:
 				// TreeMap
-				typeMap = new TreeMap<K, V>();
+				// Creating a new TreeMap object and assigning it to the variable typeMap.
+                typeMap = new TreeMap<K, V>();
 				break;
 			default:
 				// LinkedHashMap
-				typeMap = new LinkedHashMap<K, V>();
+				// Creating a new LinkedHashMap object and assigning it to the variable typeMap.
+                typeMap = new LinkedHashMap<K, V>();
 				break;
 		}
 		return typeMap;
